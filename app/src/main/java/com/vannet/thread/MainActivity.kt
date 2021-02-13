@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         txt = findViewById(R.id.tv1)
     }
 
-    fun threadTest(view: View) {
+    fun testThread(view: View) {
         thread {
             while (true){
                 // Update Text View at Current
@@ -34,6 +34,6 @@ class MainActivity : AppCompatActivity() {
                 // Thread sleep for 1 sec
                 Thread.sleep(1000)
             }
-        }.start()
+        }
     }
 }
